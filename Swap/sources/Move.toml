@@ -1,0 +1,15 @@
+[package]
+name = "ForbitSwapPoolV1"
+version = "0.4.0"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev = "83641d3f083762f31700060e5e95fbb1cbc28bf0" }
+LPCoin = { local= "../LPCoin" }
+LPResourceAccount = { local= "../LPResourceAccount" }
+SpaceCoin = { local= "../0x8b721eea04bd4148497c86c26155cb6328a329573c3d3bd2b54936945849710b" }
+U256 = { local= "../u256" }
+UQ64x64 = { local= "../uq64x64" }
+
+[addresses]
+SwapDeployer = "0x35134c31cb649a6920f01f4bd081ff2af54ef8a63deeaefb4035cfa157026027"
+ResourceAccountDeployer = "0x8b721eea04bd4148497c86c26155cb6328a329573c3d3bd2b54936945849710b"
